@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f6f9;
+    color: #333;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1100px;
+    margin: 40px auto;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    color: #1f4e79;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #666;
+}
+
+.formulario,
+.busqueda,
+.estadisticas,
+section {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.1);
+}
+
+.grupo {
+    margin-bottom: 18px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #1f4e79;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    background: #1f4e79;
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+button:hover {
+    background: #163c5f;
+}
+
+.estadisticas {
+    display: flex;
+    gap: 20px;
+}
+
+.tarjeta {
+    flex: 1;
+    text-align: center;
+    background: #eef4fb;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.tarjeta h3 {
+    margin-bottom: 10px;
+    color: #1f4e79;
+}
+
+.tarjeta span {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    background: #1f4e79;
+    color: white;
+}
+
+th,
+td {
+    padding: 14px;
+    text-align: center;
+}
+
+tbody tr:nth-child(even) {
+    background: #f8f8f8;
+}
+
+tbody tr:hover {
+    background: #e8f2ff;
+}
+
+.btnEliminar {
+    background: crimson;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.btnEliminar:hover {
+    background: darkred;
+}
+
+#mensaje {
+    margin-top: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+
+@media(max-width:768px){
+
+    .estadisticas{
+        flex-direction:column;
+    }
+
+    table{
+        font-size:14px;
+    }
+
+}
